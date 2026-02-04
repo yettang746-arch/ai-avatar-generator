@@ -383,7 +383,10 @@ export default function Home() {
         </div>
 
         {/* Main */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <div
+          id="upload-section"
+          className="container mx-auto px-4 sm:px-6 lg:px-8 pb-10"
+        >
           <div className="space-y-4">
             {/* 上传区域 */}
             <Card
