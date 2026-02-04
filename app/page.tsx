@@ -630,7 +630,7 @@ export default function Home() {
                           {/* 预计时间 */}
                           <div className="text-xs text-[#9CA3AF] flex items-center gap-1">
                             <Clock className="w-3 h-3" />
-                            预计还需 {15 - (generatingProgress * 0.15).toFixed(0)} 秒
+                            预计还需 {Math.max(0, 15 - Math.round(generatingProgress * 0.15))} 秒
                           </div>
                         </div>
                       ) : generatedImages.length > 0 ? (
